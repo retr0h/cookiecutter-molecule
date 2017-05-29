@@ -1,0 +1,9 @@
+{
+    "role_name": "role_name",
+    "scenario_name": "default",
+    "author": "your name",
+    "description": "your description",
+    "company": "your company (optional)",
+    "license": ["BSD", "MIT", "GPLv2", "GPLv3", "Apache", "CC-BY"],
+    "min_ansible_version": 1.2
+}
