@@ -1,6 +1,6 @@
 ---
 dependency:
-  name: gilt 
+  name: gilt
 driver:
   name: docker
 lint:
