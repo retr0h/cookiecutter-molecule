@@ -4,7 +4,7 @@ dependency:
 driver:
   name: docker
 lint:
-  name: ansible-lint
+  name: yamllint
 platforms:
   - name: instance-1
     image: molecule_local/centos:7
@@ -12,7 +12,11 @@ platforms:
     dockerfile: Dockerfile
 provisioner:
   name: ansible
+  lint:
+    name: ansible-lint
 scenario:
   name: {{ cookiecutter.scenario_name }}
 verifier:
   name: testinfra
+  lint:
+    name: flake8
