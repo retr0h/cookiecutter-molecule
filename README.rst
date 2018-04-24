@@ -1,7 +1,7 @@
 cookiecutter-molecule
 =====================
 
-A Molecule tempalte for `cookiecutter`_.
+A Molecule template for `cookiecutter`_.
 
 Molecule provides a native cookiecutter interface, so developers can
 provide their own templates.
