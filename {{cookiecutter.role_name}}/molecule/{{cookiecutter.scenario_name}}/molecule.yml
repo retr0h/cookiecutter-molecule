@@ -3,8 +3,6 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
 platforms:
   - name: instance-1
     image: docker.io/pycontribs/centos:7
@@ -13,7 +11,5 @@ provisioner:
   config_options:
     defaults:
       stdout_callback: yaml
-  lint:
-    name: ansible-lint
 verifier:
   name: ansible
