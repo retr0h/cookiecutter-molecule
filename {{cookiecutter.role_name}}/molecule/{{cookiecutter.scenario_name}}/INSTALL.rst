@@ -8,9 +8,7 @@ being used.
 Requirements
 ============
 
-* Ansible 2.2
 * Docker Engine
-* docker-py
 
 Install OS dependencies on CentOS 7
 
@@ -39,8 +37,13 @@ Install OS dependencies on Mac OS
 
 Install using pip:
 
+Please refer to the `Virtual environment`_ documentation for installation best
+practices. If not using a virtual environment, please consider passing the
+widely recommended `'--user' flag`_ when invoking ``pip``.
+
+.. _Virtual environment: https://virtualenv.pypa.io/en/latest/
+.. _'--user' flag: https://packaging.python.org/tutorials/installing-packages/#installing-to-the-user-site
+
 .. code-block:: bash
 
-  $ sudo pip install ansible
-  $ sudo pip install docker-py
-  $ sudo pip install molecule --pre
+    $ pip install 'molecule[docker]'

@@ -1,20 +1,15 @@
 ---
 dependency:
-  name: gilt
+  name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
 platforms:
   - name: instance-1
-    image: centos:7
+    image: docker.io/pycontribs/centos:7
 provisioner:
   name: ansible
-  lint:
-    name: ansible-lint
-scenario:
-  name: {{ cookiecutter.scenario_name }}
+  config_options:
+    defaults:
+      stdout_callback: yaml
 verifier:
-  name: testinfra
-  lint:
-    name: flake8
+  name: ansible
