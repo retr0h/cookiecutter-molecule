@@ -15,7 +15,5 @@ provisioner:
       stdout_callback: yaml
   lint:
     name: ansible-lint
-scenario:
-  name: {{ cookiecutter.scenario_name }}
 verifier:
   name: ansible
